@@ -10,7 +10,7 @@ async function connectToDb() {
       await client.connect();
     }
     console.log("Connected to MongoDB");
-    return client.db('school'); // Database name
+    return client.db('shopping'); // Database name
   } catch (err) {
     console.error("Database connection error:", err);
     throw err;
